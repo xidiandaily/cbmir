@@ -1,0 +1,36 @@
+赵珊的方法，通过对DCT转换后的图像8*8进行复杂度，引入排列复杂度（加权函数）c0，计算。
+
+程序流程：
+
+chaxun(x) (入口，x为jpg文件名，完成后显示出相似的图片的名称)；
+   |
+   |调用
+   |                                                                               调用
+① qiuzhifantu(x) (求直方图，返回每个区域的个数count和划分区间xout,  x为jpg文件名) ———>dctfuzadu(x) (再调用见下图)
+   |
+   |
+   |调用
+②qiuxiangsidu(count,A4struct(i).count) (对输入的区域个数count，count1用直方图相交法求解，返回数值)
+   |
+   |
+   |
+③对返回的数值排序，并且排好序，输出文件名
+
+
+dctfuzadu(x) (输入的x为转换成 gray格式的灰度图，此函数对其dct转换，求复杂度，求加权值，返回一个复杂度矩阵)
+   |
+   |调用
+   |
+①xiaojuzhenfuzadu(temp) (对小矩阵进行复杂度求解,此处用到（赵珊备份0417可用效果差）里的那个程序)
+   |
+   |调用
+   |
+②jiaquanzhi(t)(对小矩阵求加权值)
+   |
+   |调用
+   |
+③根据复杂度和加权值计算出本矩阵的复杂度。 结束
+
+
+chaxunbingxianshi 查询并显示图片，显示9幅
+xunhuanchaxunzunquedu 查询并显示图片，按任意键显示下一幅查询情况
