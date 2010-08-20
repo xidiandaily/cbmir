@@ -1,0 +1,7 @@
+function xunhuanchaxun
+% 顺序对图像查询，每按一次显示9幅
+while 1
+    
+    i=100;
+    str=['F:\AAA毕业设计\test1\image.orig\' num2str(i) '.jpg'];
+    [T0,P]=chaxunbinxianshi(str,9)    %
