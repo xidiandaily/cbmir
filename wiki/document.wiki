@@ -1,0 +1,11 @@
+#系统的说明文档
+
+= 系统的说明文档 =
+
+为PDF形式，是做这个设计时候的说明文档。已经上传到本项目。
+地址如下:
+[http://code.google.com/p/cbmir/downloads/detail?name=%E6%96%87%E6%A1%A3.rar#makechanges 说明文档]
+
+
+
+下载解压即可.因时间有限以及PDF文件已经有详细说明，就不再wiki上对系统做进一步描述了
